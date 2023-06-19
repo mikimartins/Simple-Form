@@ -3,11 +3,6 @@ library(mongolite)
 library(plotly)
 library(shinythemes)
 
-usethis::use_git_config(user.name = "Maike Martins", # Seu nome
-                        user.email = "miki_martins@hotmail.com")
-
-usethis::edit_r_environ()
-
 # Connect to Mongo Data Base
 mongo_conn <- mongo(collection = "test", url = "mongodb+srv://mikimartins:w87gYRgtOyQftcvW@cluster0.cmbdr1m.mongodb.net/?retryWrites=true&w=majority")
 # Define the UI
